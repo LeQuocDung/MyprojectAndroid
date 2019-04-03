@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chitietsanpham">
+
+    <include layout="@layout/activity_toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/idchitietsanpham"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/somi"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/idtensanpham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/xanh_dam"/>
+            <TextView
+                android:id="@+id/idgiasanpham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá sản phẩm"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"/>
+
+            <Spinner
+                android:id="@+id/soluongsanpham"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/idButtonThemvaogiohang"
+                android:background="@drawable/button_button_red"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Thêm vào giỏ hàng"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả chi tiết sản phẩm"
+            android:textColor="@color/xanh_dam"
+            android:textSize="20dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/idthongtinsanpham"
+                android:paddingTop="10dp"
+                android:text="sản phẩm đẹp hàng đâu châu á"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

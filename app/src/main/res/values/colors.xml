@@ -3,4 +3,12 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="mau_den">#000000</color>
+    <color name="mau_trang">#FFFFFF</color>
+    <color name="nen_chinh">#03A9F4</color>
+    <color name="xanh_dam">#2196F3</color>
+    <color name="nen_xanh">#00BCD4</color>
+    <color name="mau_tim">#9C27B0</color>
+    <color name="red">#F50303</color>
+    <color name="mah_trang">#FFFFFF</color>
 </resources>

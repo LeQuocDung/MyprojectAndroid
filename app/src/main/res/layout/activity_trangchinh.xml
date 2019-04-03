@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".trangchinh">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarmanhinhchinh"
+                android:layout_width="match_parent"
+                app:title="Trang chủ"
+                android:background="@color/nen_chinh"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:elevation="4dp">
+
+                <FrameLayout
+                    android:id="@+id/frament_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></FrameLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:background="@color/mau_trang"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/san_pham"
+                    android:textStyle="bold"
+                    android:textColor="@color/mau_den"
+                    android:textSize="15sp"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/nav_header_drawer_navigation"
+            app:menu="@menu/activity_drawer_navigation_drawer">
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
